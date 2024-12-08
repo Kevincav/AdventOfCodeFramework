@@ -95,7 +95,8 @@ This project is a framework for scala users to easily get started with Advent of
 
 ### Built With
 
-[![Scala][Scala.js]][Scala-url]
+ [![Scala][Scala.js]][Scala-url]<br>
+ [![Github-Actions][Github-actions.js]][Github-actions-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -317,3 +318,5 @@ Project Link: [https://github.com/Kevincav/AdventOfCodeFramework](https://github
 [Scala-url]: https://www.scala-lang.org/
 [aoc-shield]: https://img.shields.io/badge/Advent%20Of%20Code-0769AD?style=for-the-badge&logo=adventofcode&logoColor=white
 [aoc-url]: https://adventofcode.com/
+[Github-actions.js]: https://img.shields.io/badge/Github%20Actions-20232A?style=for-the-badge&logo=githubactions&logoColor=61DAFB
+[Github-actions-url]: https://github.com/features/actions
