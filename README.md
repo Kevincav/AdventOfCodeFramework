@@ -198,7 +198,7 @@ To get a local copy up and running follow these simple example steps.
    ```
    git push origin develop
    ```
-3. Check your most recent [action run](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues) for details
+3. Check your most recent [actions run](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/actions) for details
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
