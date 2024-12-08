@@ -22,7 +22,8 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![project_license][license-shield]][license-url]
+[![MIT License][license-shield]][license-url]
+[![Advent of Code][aoc-shield]][aoc-url]
 
 
 
@@ -39,9 +40,9 @@
     A useful template library to get started in Advent of Code with Scala
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -64,7 +65,14 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#usage">Usage</a>
+        <ul>
+            <li><a href="#setting-up-for-a-new-aoc-day">Setting up for a new AoC day</a></li>
+            <li><a href="#building-your-solution">Building your solution</a></li>
+            <li><a href="#testing-your-solution">Testing your solution</a></li>
+            <li><a href="#submitting-your-changes-and-grabbing-solution-results">Submitting your changes and grabbing solution results</a></li>
+        </ul>
+    </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -78,7 +86,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started. To avoid retyping too much info, do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`, `project_license`
+This project is a framework for scala users to easily get started with Advent of Code submissions.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,11 +125,11 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/AdventOfCodeFramework/AdventOfCodeFramework.git
    ```
 2. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin AdventOfCodeFramework/AdventOfCodeFramework
    git remote -v # confirm the changes
    ```
 
@@ -190,7 +198,7 @@ To get a local copy up and running follow these simple example steps.
    ```
    git push origin develop
    ```
-3. Check your most recent [action run](https://github.com/github_username/repo_name/issues) for details
+3. Check your most recent [action run](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues) for details
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -200,7 +208,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -224,8 +232,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/github_username/repo_name/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=github_username/repo_name" alt="contrib.rocks image" />
+<a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=AdventOfCodeFramework/AdventOfCodeFramework" alt="contrib.rocks image" />
 </a>
 
 
@@ -233,7 +241,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the project_license. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -242,7 +250,7 @@ Distributed under the project_license. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/AdventOfCodeFramework/AdventOfCodeFramework](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,16 +267,16 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
+[contributors-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
+[forks-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/network/members
+[stars-shield]: https://img.shields.io/github/stars/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
+[stars-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/stargazers
+[issues-shield]: https://img.shields.io/github/issues/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
+[issues-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues
+[license-shield]: https://img.shields.io/github/license/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
+[license-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
@@ -290,3 +298,5 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [JQuery-url]: https://jquery.com 
 [Scala.js]: https://img.shields.io/badge/Scala-20232A?style=for-the-badge&logo=scala&logoColor=61DAFB
 [Scala-url]: https://www.scala-lang.org/
+[aoc-shield]: https://img.shields.io/badge/Advent%20Of%20Code-0769AD?style=for-the-badge&logo=adventofcode&logoColor=white
+[aoc-url]: https://adventofcode.com/
