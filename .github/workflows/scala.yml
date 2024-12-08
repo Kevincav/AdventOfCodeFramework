@@ -1,0 +1,35 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+name: Scala CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  scala:
+    strategy:
+      matrix:
+        package: [ libs, utils, year2024 ]
+    runs-on: ubuntu-latest
+    env:
+      AOC_COOKIE_SESSION: ${{ secrets.AOC_COOKIE_SESSION }}
+      PRODUCTION_RUN_DAYS: DAY1
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: 21
+          distribution: corretto
+      - name: Run Main
+        run: sbt -v "+test:testOnly org.advent.${{ matrix.package }}.*"
+
