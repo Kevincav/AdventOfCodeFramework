@@ -73,6 +73,7 @@
             <li><a href="#submitting-your-changes-and-grabbing-solution-results">Submitting your changes and grabbing solution results</a></li>
         </ul>
     </li>
+    <li><a href="#rate-limiter">Rate Limiter</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
