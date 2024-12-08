@@ -40,9 +40,9 @@
     A useful template library to get started in Advent of Code with Scala
     <br />
     <br />
-    <a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/Kevincav/AdventOfCodeFramework/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/Kevincav/AdventOfCodeFramework/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -118,18 +118,20 @@ To get a local copy up and running follow these simple example steps.
   ```
   
 * [Fetch your Advent of Code Session Cookie](https://github.com/GreenLightning/advent-of-code-downloader?tab=readme-ov-file#how-do-i-get-my-session-cookie)
-
 * [Store your session cookie in a github environmental secret called AOC_COOKIE_SESSION](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
+* [Store your User-Agent in a github environmental secret called AOC_USER_AGENT](https://docs.github.com/en/actions/security-for-github-actions/security-guides/using-secrets-in-github-actions)
+  * User-Agent example: `github.com/yourrepo/AdventOfCode by youremail@domain.com`
+
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/AdventOfCodeFramework/AdventOfCodeFramework.git
+   git clone https://github.com/Kevincav/AdventOfCodeFramework.git
    ```
 2. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin AdventOfCodeFramework/AdventOfCodeFramework
+   git remote set-url origin Kevincav/AdventOfCodeFramework
    git remote -v # confirm the changes
    ```
 
@@ -198,17 +200,31 @@ To get a local copy up and running follow these simple example steps.
    ```
    git push origin develop
    ```
-3. Check your most recent [actions run](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/actions) for details
+3. Check your most recent [actions run](https://github.com/Kevincav/AdventOfCodeFramework/actions) for details
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- RATE LIMITING -->
+## Rate Limiter
+
+This repo/tool does follow the [automation guidelines](https://www.reddit.com/r/adventofcode/wiki/faqs/automation) on the /r/adventofcode community wiki. Specifically:
+
+1. Outbound calls are throttled to every x minutes in throttleFunction()
+2. Solution inputs are downloaded and committed daily at midnight through GitHub Actions (only December 1-25 every year)
+3. Once inputs are downloaded, they are cached locally in `src/main/resources`
+4. If you suspect your input is corrupted, you can manually request a fresh copy by running the `input-aoc-solution-data` [GitHub Action](https://github.com/Kevincav/AdventOfCodeFramework/actions/workflows/input-aoc-solution-data.yml)
+5. The User-Agent header is set through GitHub Action Secrets
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- ROADMAP -->
 ## Roadmap
+* Setup API / REST call to submit answers for the day (instead of manual submissions)
+* Setup Rate Limiter for REST submission
 
 
-
-See the [open issues](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/Kevincav/AdventOfCodeFramework/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -232,8 +248,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=AdventOfCodeFramework/AdventOfCodeFramework" alt="contrib.rocks image" />
+<a href="https://github.com/Kevincav/AdventOfCodeFramework/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kevincav/AdventOfCodeFramework" alt="contrib.rocks image" />
 </a>
 
 
@@ -250,7 +266,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Project Link: [https://github.com/AdventOfCodeFramework/AdventOfCodeFramework](https://github.com/AdventOfCodeFramework/AdventOfCodeFramework)
+Project Link: [https://github.com/Kevincav/AdventOfCodeFramework](https://github.com/Kevincav/AdventOfCodeFramework)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -267,16 +283,16 @@ Project Link: [https://github.com/AdventOfCodeFramework/AdventOfCodeFramework](h
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
-[contributors-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
-[forks-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/network/members
-[stars-shield]: https://img.shields.io/github/stars/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
-[stars-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
-[issues-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/issues
-[license-shield]: https://img.shields.io/github/license/AdventOfCodeFramework/AdventOfCodeFramework.svg?style=for-the-badge
-[license-url]: https://github.com/AdventOfCodeFramework/AdventOfCodeFramework/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Kevincav/AdventOfCodeFramework.svg?style=for-the-badge
+[contributors-url]: https://github.com/Kevincav/AdventOfCodeFramework/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Kevincav/AdventOfCodeFramework.svg?style=for-the-badge
+[forks-url]: https://github.com/Kevincav/AdventOfCodeFramework/network/members
+[stars-shield]: https://img.shields.io/github/stars/Kevincav/AdventOfCodeFramework.svg?style=for-the-badge
+[stars-url]: https://github.com/Kevincav/AdventOfCodeFramework/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Kevincav/AdventOfCodeFramework.svg?style=for-the-badge
+[issues-url]: https://github.com/Kevincav/AdventOfCodeFramework/issues
+[license-shield]: https://img.shields.io/github/license/Kevincav/AdventOfCodeFramework.svg?style=for-the-badge
+[license-url]: https://github.com/Kevincav/AdventOfCodeFramework/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png

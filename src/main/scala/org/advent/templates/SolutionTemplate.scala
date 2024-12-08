@@ -1,7 +1,7 @@
 package org.advent
 package templates
 
-import org.advent.utils.Problem
+import org.advent.templates.utils.Problem
 
 object SolutionTemplate extends Problem[Boolean](2024, 1) {
   override def setup(input: List[String]): Boolean = true
