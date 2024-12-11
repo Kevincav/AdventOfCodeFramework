@@ -1,9 +1,8 @@
-package org.advent
-package templates
+package org.advent.year{{ aoc_year }}
 
-import org.advent.templates.utils.Problem
+import org.advent.utils.Problem
 
-object SolutionTemplate extends Problem[Boolean](2024, 1) {
+object Day{{ aoc_day }} extends Problem[Boolean]({{ aoc_year }}, {{ aoc_day }}) {
   override def setup(input: List[String]): Boolean = true
 
   override def solution1(data: Boolean): Int = 0

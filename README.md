@@ -148,7 +148,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Copy the date template to the current year/date folder
    ```sh
-   cp src/main/scala/templates/SolutionTemplate.scala src/main/scala/year{year}/Day{CurrentDate}.scala
+   cp src/main/scala/templates/SolutionTemplate.tpl src/main/scala/year{year}/Day{CurrentDate}.scala
    ```
 2. Copy the test date template to the current year/date test folder
    ```sh
