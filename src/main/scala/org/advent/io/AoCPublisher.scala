@@ -37,7 +37,7 @@ case class AoCPublisher(year: Int, day: Int)(file: String = s"src/main/resources
   } yield checkIfSolved(aocPushResult)
 
   def publishAnswer(part1: Long, part2: Long): IO[Unit] =
-    if (sys.env("AOC_SUBMIT_ANSWERS").toBoolean) IO {} else for {
+    if (!sys.env("AOC_SUBMIT_ANSWERS").toBoolean) IO {} else for {
       newFile <- IO { File(s"$file/answers").createIfNotExists(createParents = true) }
       limiter <- RateLimiter(file).checkIfAvailableAndUpdate(s"Day $day")
       answerDetailMap <- Publisher.getDurationDetailsFromFile(newFile)
