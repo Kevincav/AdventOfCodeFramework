@@ -30,7 +30,7 @@ case class RateLimiter(year: Int, day: Int) {
     }
   }
 
-  def publishAnswer(part1: Long, part2: Long): IO[Unit] = if (!sys.env("AOC_SUBMIT_ANSWERS").toBoolean) {
+  def publishAnswer(part1: Long, part2: Long): IO[Unit] = if (sys.env("AOC_SUBMIT_ANSWERS").toBoolean) {
     // Fetch last publish run data for the current part
     val dayLimiter: LimitDetails = if (file.isEmpty) LimitDetails() else
       Json.fromJson[LimitDetails](Json.parse(Source.fromResource(s"year$year/limiters").mkString)).get
